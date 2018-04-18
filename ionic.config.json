@@ -1,0 +1,8 @@
+{
+  "name": "Everis_Endesa_CEPI",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
