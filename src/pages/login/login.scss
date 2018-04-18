@@ -1,0 +1,33 @@
+page-login {
+    .list-md .item-input:last-child{
+        border:none;
+    }
+    // .item-input ion-input, .item-input ion-textarea{
+    //     border-bottom: 1px solid #000;
+    // }
+    
+    .masters {
+        background-color:#488aff;
+      }   
+        .item-md{
+            background-color: transparent !important;
+        }
+      .item .item-content {
+        background-color: transparent !important;
+      }
+
+      .text-input::-moz-placeholder {
+        color: white;
+      }
+      
+      .text-input:-ms-input-placeholder {
+        color: white;
+      }
+      
+      .text-input::-webkit-input-placeholder {
+        color: white;
+      }
+      .input{
+          color:white;
+      }
+}
