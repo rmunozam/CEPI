@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-
+import 'rxjs/add/operator/map';
 /*
   Generated class for the ServicesInvokeProvider provider.
 
@@ -14,4 +14,17 @@ export class ServicesInvokeProvider {
     console.log('Hello ServicesInvokeProvider Provider');
   }
 
+//GET 
+  public getLoginData(url,username,password){
+    return new Promise(
+      resolve=>{
+        this.http.post(url,{email:username,password:password})
+        .map(res=>res)
+        .subscribe(data=>{
+          resolve(data);
+        });
+      }
+
+    );
+  }
 }

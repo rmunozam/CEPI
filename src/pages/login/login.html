@@ -13,25 +13,24 @@
 </ion-header> -->
 
 
-<ion-content padding class="masters">
-  <form #loginForm="ngForm" (ngSubmit)="loginUser()">
-    <ion-list no-lines > 
+<ion-content padding class="masters" no-bounce>
+  <form #loginForm="ngForm" (ngSubmit)="loginUser(loginForm)">
+    <ion-list no-lines> 
       <ion-item text-center>
-        <ion-img width="192" height="192" src="../../assets/imgs/splash_img_endesa.png"></ion-img>
+        <ion-img width="192" height="192" src="../www/assets/imgs/splash_img_endesa.png"></ion-img>
       </ion-item>
-      <ion-item>
+      <ion-item style="border-bottom: 1px solid #fff !important">
         <ion-icon name="person" item-left color="light" ></ion-icon>
-        <ion-input type="text" placeholder="Usuario" color="light" text-color="light"></ion-input>
+        <ion-input type="text" placeholder="Usuario" color="light" text-color="light" [(ngModel)]="access.username" name="username"></ion-input>
       </ion-item>
-      <ion-item>
+      <ion-item style="border-bottom: 1px solid #fff !important">
         <ion-icon name="key" item-left color="light"></ion-icon>
-        <ion-input type="password" placeholder="Contraseña" color="light"></ion-input>
-      </ion-item>
-      <ion-item>
-        <button ion-button block type="submit" outline color="light">Acceder</button>
+        <ion-input type="password" placeholder="Contraseña" color="light" [(ngModel)]="access.password" name="password"></ion-input>
       </ion-item>
     </ion-list>
-  </form>
 
-
+<div style="padding: 30px;">
+    <button ion-button block type="submit" outline color="light" style="padding: 20px;">ACCEDER</button>
+</div>
+</form>
 </ion-content>
