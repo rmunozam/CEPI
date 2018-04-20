@@ -1,22 +1,25 @@
 page-elementos {
-.divider{
-    font-size: 12px;
-    color:  #0755ff;
+    .divider{
+        font-size: 12px;
+        color:  #0755ff;
 
-}
-.segment-ios{
-    margin-top: 10%;
-}
-.toolbar-ios{
-    padding-top: 25% !important;
-}
-.content-ios{
-    margin-top: 4%;
-}
-.toolbar-md{
-    padding: 0px;
-}
-img{
-    max-width: 50%;
-}
+    }
+    .segment-ios{
+        margin-top: 10%;
+    }
+    .toolbar-ios{
+        padding-top: 25% !important;
+    }
+    .content-ios{
+        margin-top: 4%;
+    }
+    .toolbar-md{
+        padding: 0px;
+    }
+    img{
+        max-width: 50%;
+    }
+    .toolbar-title-md{
+        padding-top: 2%;
+    }
 }

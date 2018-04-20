@@ -88,3 +88,26 @@ $colors: (
 @import "roboto";
 @import "noto-sans";
 $img-placeholder-background:"light";
+$toolbar-md-background:color($colors, primary);
+$tabbar-md-background:                    #f8f8f8;
+
+// Change the color of the tabs text
+$tab-button-md-active-color:              color($colors, primary);
+$tab-button-md-inactive-color:            #8c8c8c;
+
+// Change the color of the segment button text
+$toolbar-md-active-color:                 #fff;
+$toolbar-md-inactive-color:               #fff;
+$segment-button-md-text-color-activated:  #fff;
+
+$toolbar-ios-background:color($colors, primary);
+$tabbar-ios-background:                    #f8f8f8;
+
+// Change the color of the tabs text
+$tab-button-ios-active-color:              color($colors, primary);
+$tab-button-ios-inactive-color:            #8c8c8c;
+
+// Change the color of the segment button text
+$toolbar-ios-active-color:                 #fff;
+$toolbar-ios-inactive-color:               #fff;
+$segment-button-ios-text-color-activated:  #fff;

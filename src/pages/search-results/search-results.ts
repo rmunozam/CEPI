@@ -18,6 +18,10 @@ export class SearchResultsPage {
   urlService="http://api.openweathermap.org/data/2.5/weather";
   searchText:string="";
   listItemResult;
+  wheat={
+    city:"",
+    situation:""
+  };
   constructor(public navCtrl: NavController, public navParams: NavParams,public services:ServicesInvokeProvider,public loading:LoadingController) {
     this.searchText=this.navParams.data;
     this.search();
@@ -40,11 +44,13 @@ export class SearchResultsPage {
     loader.present().then(() => {
       this.services.getBySearch(this.urlService,this.searchText)
       .then(data=>{
-        console.log(data);
         this.listItemResult=data;
+        this.wheat.city=this.listItemResult.name;
+        this.wheat.situation=this.listItemResult.weather[0].main;
         loader.dismiss();
       })
       .catch(err=>{
+         loader.dismiss();
           console.log(err);
       });
     });
