@@ -6,13 +6,63 @@
 -->
 <ion-header>
 
+<<<<<<< HEAD
   <ion-navbar color="primary">
     <ion-title>Elementos</ion-title>
+=======
+  <ion-navbar>
+    <ion-title>elementos</ion-title>
+    <ion-segment [(ngModel)]="selec">
+        <ion-segment-button value="Indv">Individuales</ion-segment-button>
+        <ion-segment-button value="Colec">Colectivos</ion-segment-button>
+    </ion-segment>
+>>>>>>> e7c923202569bb06719d13cb3b29f6afda9dee3c
   </ion-navbar>
-
 </ion-header>
 
 
-<ion-content padding>
+<ion-content no-padding>
 
+
+  <div *ngIf="selec == 'Indv'">
+    <ion-list>
+      <ion-item-divider color="light" class="divider" text-uppercase>Protección de la cabeza</ion-item-divider>
+      <ion-item-group>
+            <button ion-item *ngFor="let item of Lista" text-left>
+              <ion-icon item-left><img [src]="'assets/icon-prueba/ico_'+item.id+'.png'" ></ion-icon>
+              <h2>{{item.titulo}}</h2>
+            </button>
+      </ion-item-group>
+      <ion-item-divider color="light" class="divider" text-uppercase>Protección extremidades superiores</ion-item-divider>
+      <ion-item-group>
+          <button ion-item *ngFor="let item of Lista2" text-left>
+            <ion-icon item-left><img [src]="'assets/icon-prueba/ico_'+item.id+'.png'" ></ion-icon>
+            <h2>{{item.titulo}}</h2>
+          </button>
+      </ion-item-group>
+      <ion-item-divider color="light" class="divider" text-uppercase>Protección del tronco/cuerpo entero</ion-item-divider>
+      <ion-item-group>
+          <button ion-item *ngFor="let item of Lista3" text-left>
+            <ion-icon item-left><img [src]="'assets/icon-prueba/ico_'+item.id+'.png'" ></ion-icon>
+            <h2>{{item.titulo}}</h2>
+          </button>
+      </ion-item-group>
+      <ion-item-divider color="light" class="divider" text-uppercase>Protección extremidades inferiores</ion-item-divider>
+      <ion-item-group>
+          <button ion-item *ngFor="let item of Lista4" text-left>
+            <ion-icon item-left><img [src]="'assets/icon-prueba/ico_'+item.id+'.png'" ></ion-icon>
+            <h2>{{item.titulo}}</h2>
+          </button>
+      </ion-item-group>
+    </ion-list>  
+  </div>
+
+  <div *ngIf="selec == 'Colec'">
+      <ion-list>
+          <button ion-item *ngFor="let item of Lista5" text-left>
+            <ion-icon item-left><img [src]="'assets/icon-prueba/ico_'+item.id+'.png'" ></ion-icon>
+            <h2>{{item.titulo}}</h2>
+          </button>
+      </ion-list>
+  </div>
 </ion-content>
