@@ -1,13 +1,15 @@
 <ion-header>
- <ion-navbar hideBackButton>
+ <ion-navbar hideBackButton color="primary">
     <ion-title>
-      Ionic Blank
+      Endesa CEPI
     </ion-title>
+    <ion-searchbar (search)="getItems($event)" [(ngModel)]="searchText" placeholder="Buscar"></ion-searchbar>
   </ion-navbar>
+ 
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
+   
   <p>
     If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
   </p>

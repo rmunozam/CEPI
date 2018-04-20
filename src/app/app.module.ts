@@ -13,7 +13,7 @@ import { ElementosPage } from '../pages/elementos/elementos';
 import { NovedadesPage } from '../pages/novedades/novedades';
 import { PerfilPage } from '../pages/perfil/perfil';
 import {TabPage} from '../pages/tab/tab';
-
+import { SearchResultsPage } from '../pages/search-results/search-results';
 @NgModule({
   declarations: [
     MyApp,
@@ -22,7 +22,8 @@ import {TabPage} from '../pages/tab/tab';
     ElementosPage,
     NovedadesPage,
     PerfilPage,
-    TabPage
+    TabPage,
+    SearchResultsPage
   ],
   imports: [
     BrowserModule,
@@ -38,7 +39,8 @@ import {TabPage} from '../pages/tab/tab';
     ElementosPage,
     NovedadesPage,
     PerfilPage,
-    TabPage
+    TabPage,
+    SearchResultsPage
   ],
   providers: [
     StatusBar,

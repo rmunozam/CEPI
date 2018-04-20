@@ -14,7 +14,7 @@ export class ServicesInvokeProvider {
     console.log('Hello ServicesInvokeProvider Provider');
   }
 
-//GET 
+//LOGIN
   public getLoginData(url,username,password){
     return new Promise(
       resolve=>{
@@ -27,4 +27,18 @@ export class ServicesInvokeProvider {
 
     );
   }
+
+public getBySearch(url,searchText){
+  return new Promise(
+    resolve=>{
+      this.http.get(url+"?q="+searchText+"&APPID=50cb6078ea20838f3e2a610ea7a097f4")
+      .map(res=>res)
+      .subscribe(data=>{
+        resolve(data);
+      });
+    }
+
+  );
+}
+
 }
