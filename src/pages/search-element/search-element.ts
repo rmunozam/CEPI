@@ -17,7 +17,7 @@ export class SearchElementPage {
   PageTitle:string;
   NumberOfResults:string;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.PageTitle="Esto es un tochaco de ejemplo para ver";
+    this.PageTitle="Casco";
     this.NumberOfResults="21";
   }
 

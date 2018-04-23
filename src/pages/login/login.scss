@@ -36,4 +36,8 @@ page-login {
       .input{
           color:white;
       }
+    ion-content{
+        background-image: url('../assets/imgs/login_img_bg.jpg');
+        background-repeat: no-repeat;
+    }
 }

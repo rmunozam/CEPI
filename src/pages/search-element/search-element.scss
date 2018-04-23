@@ -4,6 +4,11 @@ page-search-element {
     margin-left: -11%;
     color:white;
 }
+.text-md{
+    margin-left: -20%;
+    margin-top: 7px;
+    color:white;
+}
 .toolbar-title-ios {
     text-overflow: inherit;
     white-space: normal;
@@ -16,5 +21,16 @@ page-search-element {
     white-space: normal;
     text-align: left;
     font-size:1.3em;
+    padding-top: 10px;
+    padding-left:0;
+    padding-right:0;
+    //padding: 0;
  }
+
+ .toolbar-ios ion-title{
+     padding-left:36px ;
+     padding-right: 36px;
+     padding-top: 30px !important;
+ }
+
 }

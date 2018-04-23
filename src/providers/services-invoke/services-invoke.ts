@@ -43,7 +43,7 @@ export class ServicesInvokeProvider {
   public getNovedades(){
     return new Promise(
       resolve=>{
-        this.http.get("")
+        this.http.get("https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=f49b72ea2975415c93c8b6c7d43557d0")
           .map(res=>res)
           .subscribe(data=>{
             resolve(data);
