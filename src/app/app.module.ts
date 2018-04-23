@@ -14,6 +14,8 @@ import { NovedadesPage } from '../pages/novedades/novedades';
 import { PerfilPage } from '../pages/perfil/perfil';
 import {TabPage} from '../pages/tab/tab';
 import { SearchResultsPage } from '../pages/search-results/search-results';
+import {SearchElementPage } from '../pages/search-element/search-element';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -23,12 +25,15 @@ import { SearchResultsPage } from '../pages/search-results/search-results';
     NovedadesPage,
     PerfilPage,
     TabPage,
-    SearchResultsPage
+    SearchResultsPage,
+    SearchElementPage
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp,{
+      backButtonText: ''
+    }),
     IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
@@ -40,7 +45,8 @@ import { SearchResultsPage } from '../pages/search-results/search-results';
     NovedadesPage,
     PerfilPage,
     TabPage,
-    SearchResultsPage
+    SearchResultsPage,
+    SearchElementPage
   ],
   providers: [
     StatusBar,

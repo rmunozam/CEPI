@@ -14,5 +14,14 @@
 
 
 <ion-content padding>
+<ion-list>
+    <ion-item>
+        <ion-label>{{TextNotificaciones}}</ion-label>
+        <ion-toggle [(ngModel)]="Notificaciones" (ionChange)="UpdateNotification()"></ion-toggle>
+      </ion-item>
+      <button ion-item text-left (click)="CloseSesion()">
+          <h2>Cerrar sesión</h2> 
+      </button>
 
+</ion-list>
 </ion-content>

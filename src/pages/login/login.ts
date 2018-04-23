@@ -44,6 +44,7 @@ export class LoginPage {
           console.log('Stored item!');
           this.navCtrl.push(TabPage)
           .then(()=>{
+            this.checkNotificationStatus();
             loader.dismiss();
             let index = 0;
             this.navCtrl.remove(index);})}
@@ -64,5 +65,12 @@ export class LoginPage {
     return str;
 }
 
-
+checkNotificationStatus(){
+  this.sharePreferences.keys()
+  .then(allKeys=>{
+    if(allKeys.indexOf("Notifications") < 0){
+      this.sharePreferences.set("Notifications",true);
+    }
+  })
+  }
 }
