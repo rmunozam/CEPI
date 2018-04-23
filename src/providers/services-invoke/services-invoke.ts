@@ -28,17 +28,28 @@ export class ServicesInvokeProvider {
     );
   }
 
-public getBySearch(url,searchText){
-  return new Promise(
-    resolve=>{
-      this.http.get(url+"?q="+searchText+"&APPID=50cb6078ea20838f3e2a610ea7a097f4")
-      .map(res=>res)
-      .subscribe(data=>{
-        resolve(data);
-      });
-    }
+  public getBySearch(url,searchText){
+    return new Promise(
+      resolve=>{
+        this.http.get(url+"?q="+searchText+"&APPID=50cb6078ea20838f3e2a610ea7a097f4")
+        .map(res=>res)
+        .subscribe(data=>{
+          resolve(data);
+        });
+      }
+    );
+  }
 
-  );
-}
+  public getNovedades(){
+    return new Promise(
+      resolve=>{
+        this.http.get("")
+          .map(res=>res)
+          .subscribe(data=>{
+            resolve(data);
+          });
+      }
 
+    )
+  }
 }

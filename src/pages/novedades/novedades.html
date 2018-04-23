@@ -13,6 +13,18 @@
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content>
+  <ion-item *ngFor="let item of listaNovedades">
+  <button ion-button large color="month" class="text-header margen-header-left" text-uppercase>{{item.month}}</button>
+  <button ion-button color="year" class="text-header margen-header-right" text-uppercase>{{item.year}}</button>
+  
+  <ion-card>  
+      <ion-list>
+        <button ion-item color="light" class="text-body" text-wrap (click)="goToPage(item.url)">
+          <h1 class="date" padding>{{item.data}}</h1>
+          {{item.titulo}}
+        </button>
+      </ion-list>
+  </ion-card>
+</ion-item>
 </ion-content>

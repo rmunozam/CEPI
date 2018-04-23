@@ -2,4 +2,51 @@ page-novedades {
     .toolbar-title-md{
         padding-top: 2%;
     }
+    .button{
+        text-align: -webkit-right;
+        border: none;
+    }
+    .text-header{
+        font-size: 12px;
+        color:  #fff;
+
+    }
+    .text-body{
+        font-size: 20px;
+        font-weight: 500;
+        color:  #0755FF
+    }
+    .item-block{
+        line-height: inherit
+    }
+    .date{
+        font-size: 15px;
+        font-weight: 800;
+        color:  #828688
+    }
+    .card-ios h1{
+        margin: -15px -15px -10px;
+    }
+    .card-md h1{
+       margin: -15px -15px -10px;
+    }
+
+    .list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block{
+        border: none !important;
+    }
+
+    .label-md{
+        font-size:inherit !important;
+    }
+    .margen-header-right{
+        float: right;
+        margin-right: 3%;
+    }
+    .margen-header-left{
+        float: left;
+        margin-left: 3%;
+        width: 150px;
+        
+    }
+
 }
